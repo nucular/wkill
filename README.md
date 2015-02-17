@@ -10,6 +10,6 @@ For terminating processes running with UAC Elevation, it needs to be running
 `As administrator` too.
 
 
-Thanks to [ardoar](http://gnome-look.org/usermanager/search.php?username=andoar)
+Thanks to [andoar](http://gnome-look.org/usermanager/search.php?username=andoar)
 for the [icon](http://gnome-look.org/content/show.php?content=74536) (it's under
 GNU GPL 3).

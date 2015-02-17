@@ -19,7 +19,6 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>False</RunCodeAnalysis>
-    <SourceAnalysisOverrideSettingsFile>C:\Users\Jakob\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <ApplicationIcon>Resources\xkill.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
