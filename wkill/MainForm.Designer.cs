@@ -41,7 +41,6 @@ namespace wkill
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.Cursor = System.Windows.Forms.Cursors.Cross;
-			this.Enabled = false;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "MainForm";
 			this.Opacity = 0.01D;

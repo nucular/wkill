@@ -34,12 +34,14 @@ namespace wkill
 		[STAThread]
 		private static void Main(string[] args)
 		{
+			Console.WriteLine("Lol.");
+			
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new MainForm());
 		}
 		
-		public static void Wkill(Point p)
+		public static void Wkill(Point p, bool soft = false)
 		{
 			IntPtr hwnd;
 			Int32 pid = 0;
@@ -77,7 +79,10 @@ namespace wkill
 			}
 			try
 			{
-				proc.Kill();
+				if (soft)
+					proc.CloseMainWindow();
+				else
+					proc.Kill();
 			}
 			catch (Win32Exception e)
 			{

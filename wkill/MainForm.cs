@@ -21,6 +21,10 @@ namespace wkill
 		{
 			InitializeComponent();
 			
+			// Another method to make the form transparent
+			//SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+        	//this.BackColor = Color.Transparent;
+			
 			// Overlay _everything_, even multiple monitors
 			int screenLeft = SystemInformation.VirtualScreen.Left;
 	        int screenTop = SystemInformation.VirtualScreen.Top;
@@ -33,6 +37,11 @@ namespace wkill
 	        this.Click += onClick;
 		}
 		
+		/// <summary>
+		/// Yet another method to make the form transparent
+		/// </summary>
+		protected override void OnPaintBackground(PaintEventArgs e) { /* Ignore */ }
+		
 		protected void onClick(object sender, EventArgs args) {
 			MouseEventArgs margs = (MouseEventArgs) args;
 			
@@ -43,7 +52,7 @@ namespace wkill
 			else
 			{
 				this.SendToBack();
-				Program.Wkill(MousePosition);
+				Program.Wkill(MousePosition, margs.Button == MouseButtons.Middle);
 				this.Close();
 			}
 		}
